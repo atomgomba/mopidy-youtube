@@ -1,0 +1,17 @@
+backports-abc==0.5
+certifi==2018.4.16
+chardet==3.0.4
+futures==3.2.0
+idna==2.7
+Mopidy==2.1.0
+-e git+git@github.com:atomgomba/mopidy-youtube.git@3d9aa6bde7403448b94cdab8338a016805a38d21#egg=Mopidy_Youtube
+pafy==0.5.4
+pycollada==0.6
+Pykka==1.2.1
+python-dateutil==2.7.3
+requests==2.19.1
+singledispatch==3.4.0.3
+six==1.11.0
+tornado==5.1
+urllib3==1.23
+youtube-dl==2018.7.10

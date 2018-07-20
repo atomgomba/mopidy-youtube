@@ -20,7 +20,7 @@ import requests
 from mopidy_youtube import logger
 
 yt_api_endpoint = 'https://www.googleapis.com/youtube/v3/'
-yt_key = 'AIzaSyAl1Xq9DwdE_KD4AtPaE4EJl3WZe2zCqg4'
+yt_key = 'AIzaSyBHrgPq8WryV_aN8ipUusXYLd1u12gAYB4'
 session = requests.Session()
 
 video_uri_prefix = 'youtube:video'
@@ -150,7 +150,7 @@ class YouTubeLibraryProvider(backend.LibraryProvider):
     def lookup(self, track):
         if 'yt:' in track:
             track = track.replace('yt:', '')
-
+        logger.debug("track:" + track)
         if 'youtube.com' in track:
             url = urlparse(track)
             req = parse_qs(url.query)
