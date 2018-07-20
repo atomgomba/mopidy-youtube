@@ -25,10 +25,11 @@ setup(
     include_package_data=True,
     install_requires=[
         'setuptools',
-        'requests >= 2.2.1',
-        'pafy >= 0.3.35',
+        'requests >= 2.19.1',
+        'pafy >= 0.5.4',
         'Mopidy >= 1.0',
-        'Pykka >= 1.1',
+        'Pykka >= 1.2.1',
+        'pycollada >= 0.6',
     ],
     entry_points={
         'mopidy.ext': [
